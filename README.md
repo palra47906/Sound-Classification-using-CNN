@@ -3,6 +3,11 @@ This project is a machine learning application built using Streamlit and TensorF
 It uses a Convolutional Neural Network (CNN) trained on the UrbanSound8K dataset to predict various sound categories based on uploaded .wav audio files. 
 The model's predictions are displayed along with visualizations like the mel spectrogram and audio waveform.
 
+<h1>🔍 Motivation</h1>
+Environmental noise classification has many real-world applications like smart cities, surveillance, and hearing aids. 
+This project aims to build a deep learning model capable of classifying urban sounds using raw audio data.
+
+
 <h1>📁 Dataset</h1>
 The UrbanSound8K dataset consists of 8,732 labeled sound excerpts (<=4s) of urban sounds from 10 classes:
 🚗 Car Horn
