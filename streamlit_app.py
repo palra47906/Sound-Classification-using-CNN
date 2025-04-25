@@ -1,37 +1,16 @@
-import streamlit as st
-import numpy as np
-import librosa
-from keras.models import load_model
 import os
-import gdown
+import urllib.request
 
-# Google Drive direct download link (file ID)
-drive_url = "https://drive.google.com/uc?id=1gzMXQawv8R-VelwxYVR4Tn9tWcrvwJGW"
-model_path = "urban_sound_model.h5"
+import streamlit as st
+from tensorflow.keras.models import load_model 
 
-@st.cache_resource
-def download_and_load_model():
-    if not os.path.exists(model_path):
-        gdown.download(drive_url, model_path, quiet=False)
-    model = load_model(model_path)
-    return model
+model_url = "https://huggingface.co/palra47906/Sound_Classification_model_using_CNN/resolve/bb833f2ee8f4c14c73f07158b2e7313dad25d7c7/urbansound8k_cnn.h5"
+model_path = "urbansound8k_cnn.h5"
 
-model = download_and_load_model()
+# Download model if not already downloaded
+if not os.path.exists(model_path):
+    with st.spinner("Downloading model..."):
+        urllib.request.urlretrieve(model_url, model_path)
 
-def preprocess_audio(file, sample_rate=22050, duration=4, offset=0.5):
-    audio, sr = librosa.load(file, sr=sample_rate, duration=duration, offset=offset)
-    mfcc = librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=40)
-    mfcc = np.expand_dims(mfcc, axis=-1)
-    mfcc = np.expand_dims(mfcc, axis=0)
-    return mfcc
-
-st.title("UrbanSound Classification")
-
-uploaded_file = st.file_uploader("Upload a .wav file", type=["wav"])
-
-if uploaded_file is not None:
-    st.audio(uploaded_file)
-    features = preprocess_audio(uploaded_file)
-    prediction = model.predict(features)
-    predicted_class = np.argmax(prediction)
-    st.success(f"Predicted Class: {predicted_class}")
+# Load the model
+model = load_model(model_path)
