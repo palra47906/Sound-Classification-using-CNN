@@ -1,7 +1,9 @@
-streamlit
-tensorflow
-numpy
-pandas
-librosa
-matplotlib
-soundfile
+streamlit==1.19.0
+numpy==1.23.4
+pandas==1.5.3
+librosa==0.9.2
+matplotlib==3.7.0
+soundfile==0.10.3.post1
+tensorflow==2.11.0
+requests==2.28.2
+pytz==2022.7.1
