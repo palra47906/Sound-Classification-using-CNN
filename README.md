@@ -49,11 +49,12 @@ The CNN model consists of:
 
 <h1>🎯 Try It Yourself — Live Demo!</h1>
 
-Want to skip the code and see what this model can do?  
+Want to skip the code and see what this model can do? 
+
 🚀 Check out the interactive demo hosted on Streamlit:
 
-    👉 <a href="https://sound-classification-using-cnn-h4oumuotilusmzconxekng.streamlit.app/" target="_blank">**Click here to launch the live sound classifier app**</a>
-
+👉 <a href="https://sound-classification-using-cnn-h4oumuotilusmzconxekng.streamlit.app/" target="_blank">**Click here to launch the live sound classifier app**</a>
+    
 🎵 Upload your own `.wav` file and watch the model classify it into one of 10 urban sound categories — complete with waveform and spectrogram visualizations, all in your browser!
 
     
