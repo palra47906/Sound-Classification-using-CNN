@@ -36,4 +36,34 @@ The CNN model consists of:
     Label Encoding: String labels are encoded to numeric classes
 
     Train/Test Split: 80/20 stratified split for model evaluation
+    
+<h1>📊 Evaluation</h1>
+
+    Classification Report: Precision, Recall, and F1-Score per class
+
+    Confusion Matrix: Visual representation of prediction performance
+
+<h1>🛠️ Requirements</h1>
+
+    Python 3.x
+
+    TensorFlow
+
+    Librosa
+
+    Pandas
+
+    NumPy
+
+    Scikit-learn
+
+    Seaborn
+
+    Matplotlib
+
+Install all dependencies with:
+
+    pip install -r requirements.txt
+
+
 
