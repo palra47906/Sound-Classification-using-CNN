@@ -1,5 +1,7 @@
 streamlit
 tensorflow
 numpy
-soundfile
+pandas
 librosa
+matplotlib
+soundfile
