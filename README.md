@@ -16,6 +16,11 @@ The UrbanSound8K dataset consists of 8,732 labeled sound excerpts (<=4s) of urba
 🚛 Engine Idling
 ❄️ Air Conditioner
 
+Official link : 
+    
+    https://urbansounddataset.weebly.com/urbansound8k.html
+
+
 <h1>🧠 Model Architecture</h1>
 The CNN model consists of:
 
@@ -64,6 +69,14 @@ The CNN model consists of:
 Install all dependencies with:
 
     pip install -r requirements.txt
+
+<h1>🏁 Running the Notebook</h1>
+
+Open Urbansound8k_using_CNN.ipynb in Jupyter Notebook or Google Colab.
+
+Ensure dataset is placed correctly.
+
+Run all cells to train and evaluate the model.
 
 
 
