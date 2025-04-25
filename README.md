@@ -46,6 +46,16 @@ The CNN model consists of:
     Label Encoding: String labels are encoded to numeric classes
 
     Train/Test Split: 80/20 stratified split for model evaluation
+
+<h1>🎯 Try It Yourself — Live Demo!</h1>
+
+Want to skip the code and see what this model can do?  
+🚀 Check out the interactive demo hosted on Streamlit:
+
+    👉 <a href="https://sound-classification-using-cnn-h4oumuotilusmzconxekng.streamlit.app/" target="_blank">**Click here to launch the live sound classifier app**</a>
+
+🎵 Upload your own `.wav` file and watch the model classify it into one of 10 urban sound categories — complete with waveform and spectrogram visualizations, all in your browser!
+
     
 <h1>📊 Evaluation</h1>
 
