@@ -78,5 +78,9 @@ Ensure dataset is placed correctly.
 
 Run all cells to train and evaluate the model.
 
+<h1>🤝 Contributing</h1>
+Feel free to fork this repo and submit a PR if you'd like to add improvements or new features!
 
+<h1>⭐ Show Some Love</h1>
+If you found this project useful, consider giving it a ⭐ on GitHub to help others find it too!
 
