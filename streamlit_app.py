@@ -22,7 +22,7 @@ class_mapping = load_class_mapping()
 # --- Download & Load Model from Hugging Face or URL ---
 @st.cache_resource
 def load_trained_model():
-    model_url = "https://huggingface.co/palra47906/Sound_Classification_model_using_CNN/resolve/main/Urbansound8K.keras"  # UPDATE
+    model_url = "https://huggingface.co/palra47906/Sound_Classification_model_using_CNN/resolve/main/Urbansound8K_using_CNN.keras"  # UPDATE
     model_path = "urbansound8k_cnn.keras"
     if not os.path.exists(model_path):
         with st.spinner("Downloading model..."):
